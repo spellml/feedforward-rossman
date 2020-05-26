@@ -1,3 +1,6 @@
 .ipynb_chekpoints/
 .DS_Store
-.vscode/
+.vscode/.ipynb_checkpoints/
+
+scripts/.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
