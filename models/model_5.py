@@ -193,6 +193,7 @@ class FeedforwardTabularModel(nn.Module):
         scaler = torch.cuda.amp.GradScaler()
         
         for epoch in range(self.n_epochs):
+            import pdb; pdb.set_trace()
             lvs = []
             for i, (X_batch, y_batch) in enumerate(batches):
                 X_batch = X_batch.cuda()
@@ -231,7 +232,7 @@ class FeedforwardTabularModel(nn.Module):
                     print(f"Epoch {epoch + 1}/{self.n_epochs}; Batch {i}; Loss {lv}")
 
                 writer.add_scalar(
-                    'training loss', lv, self.n_epochs * len(batches) + i
+                    'training loss', lv, epoch * len(batches) + i
                 )
 
                 # the scalar wraps the optimizer in order to implements its discarding behavior

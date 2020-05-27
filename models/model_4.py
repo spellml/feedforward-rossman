@@ -209,7 +209,7 @@ class FeedforwardTabularModel(nn.Module):
                     print(f"Epoch {epoch + 1}/{self.n_epochs}; Batch {i}; Loss {lv}")
 
                 writer.add_scalar(
-                    'training loss', lv, self.n_epochs * len(batches) + i
+                    'training loss', lv, epoch * len(batches) + i
                 )
 
                 optimizer.step()
