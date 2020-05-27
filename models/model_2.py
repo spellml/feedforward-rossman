@@ -224,3 +224,8 @@ class FeedforwardTabularModel(nn.Module):
         y_pred = self.predict(X)
         y = torch.tensor(y, dtype=torch.float32).cuda()
         return self.score_fn(y, y_pred)
+
+model = FeedforwardTabularModel()
+model.cuda()
+model.fit(X_train_sample.values, y_train_sample.values)
+torch.save(model.named_parameters(), "model.pth")
