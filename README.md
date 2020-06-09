@@ -6,12 +6,33 @@ This is a tabular time-series dataset, traditionally the domain of gradient boos
 
 This `pytorch` implementation adapts the `fastai` model presented in [Lesson 3](https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb) of the FastAI course.
 
-To run on Spell (requires being in the `spellrun` org for the GH integration):
+To run code and notebooks in a Spell workspace:
 
-```python
+```bash
+spell jupyter --lab \
+  --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
+  --pip kaggle \
+  --env KAGGLE_USERNAME=YOUR_USERNAME \
+  --env KAGGLE_KEY=YOUR_KEY \
+  feedforward-rossman
+```
+
+```bash
 prodspell run \
   --machine-type V100 \
   --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
   --pip kaggle \
-  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/download_data.sh; python /spell/models/model_1.py"
+  --env KAGGLE_USERNAME=YOUR_USERNAME \
+  --env KAGGLE_KEY=YOUR_KEY \
+  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/download_data.sh; python /spell/models/model_4.py"
+```
+
+```bash
+prodspell run \
+  --machine-type V100 \
+  --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
+  --pip kaggle \
+  --env KAGGLE_USERNAME=YOUR_USERNAME \
+  --env KAGGLE_KEY=YOUR_KEY \
+  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/download_data.sh; python /spell/models/model_5.py"
 ```
