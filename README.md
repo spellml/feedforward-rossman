@@ -18,7 +18,7 @@ spell jupyter --lab \
 ```
 
 ```bash
-prodspell run \
+spell run \
   --machine-type V100 \
   --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
   --pip kaggle \
@@ -28,7 +28,7 @@ prodspell run \
 ```
 
 ```bash
-prodspell run \
+spell run \
   --machine-type V100 \
   --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
   --pip kaggle \
