@@ -1,4 +1,4 @@
-# feedforward-rossman <a href="https://web.spell.ml/ResidentMario/workspace_create?workspaceName=feedforward-rossman&githubUrl=https%3A%2F%2Fgithub.com%2Fspellml%2Ffeedforward-rossman&pip=kaggle&envVars=KAGGLE_USERNAME%3DYOUR_USERNAME,KAGGLE_KEY=YOUR_KEY"><img src=https://spell.ml/badge.svg height=20px/></a>
+# feedforward-rossman <a href="https://web.spell.ml/workspace_create?workspaceName=feedforward-rossman&githubUrl=https%3A%2F%2Fgithub.com%2Fspellml%2Ffeedforward-rossman&pip=kaggle&envVars=KAGGLE_USERNAME%3DYOUR_USERNAME,KAGGLE_KEY=YOUR_KEY"><img src=https://spell.ml/badge.svg height=20px/></a>
 `pytorch` training script implementing a feedforward network on the [Rossman Store Sales](https://www.kaggle.com/c/rossmann-store-sales) competition.
 
 This is a tabular time-series dataset, traditionally the domain of gradient boosted tree libraries like `xgboost`. However, recent advances in generalized embeddings (mostly stemming from the NLP world) have put feedforward neural networks on par with GBTs in terms of performance.
