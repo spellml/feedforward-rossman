@@ -23,7 +23,7 @@ spell run \
   --pip kaggle \
   --env KAGGLE_USERNAME=YOUR_USERNAME \
   --env KAGGLE_KEY=YOUR_KEY \
-  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/upgrade_env.sh; python /spell/models/model_4.py"
+  "chmod +x /spell/scripts/download_data.sh /spell/scripts/upgrade_env.sh; /spell/scripts/download_data.sh; /spell/scripts/upgrade_env.sh; python /spell/models/model_4.py"
 ```
 
 ```bash
@@ -33,5 +33,5 @@ spell run \
   --pip kaggle \
   --env KAGGLE_USERNAME=YOUR_USERNAME \
   --env KAGGLE_KEY=YOUR_KEY \
-  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/upgrade_env.sh; python /spell/models/model_5.py"
+  "chmod +x /spell/scripts/download_data.sh /spell/scripts/upgrade_env.sh; /spell/scripts/download_data.sh; /spell/scripts/upgrade_env.sh; python /spell/models/model_4.py"
 ```
