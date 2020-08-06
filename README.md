@@ -9,7 +9,7 @@ To run code and notebooks in a Spell workspace:
 
 ```bash
 spell jupyter --lab \
-  --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
+  --github-url https://github.com/spellml/feedforward-rossman.git \
   --pip kaggle \
   --env KAGGLE_USERNAME=YOUR_USERNAME \
   --env KAGGLE_KEY=YOUR_KEY \
@@ -19,19 +19,19 @@ spell jupyter --lab \
 ```bash
 spell run \
   --machine-type V100 \
-  --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
+  --github-url https://github.com/spellml/feedforward-rossman.git \
   --pip kaggle \
   --env KAGGLE_USERNAME=YOUR_USERNAME \
   --env KAGGLE_KEY=YOUR_KEY \
-  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/download_data.sh; python /spell/models/model_4.py"
+  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/upgrade_env.sh; python /spell/models/model_4.py"
 ```
 
 ```bash
 spell run \
   --machine-type V100 \
-  --github-url https://github.com/ResidentMario/spell-feedforward-rossman.git \
+  --github-url https://github.com/spellml/feedforward-rossman.git \
   --pip kaggle \
   --env KAGGLE_USERNAME=YOUR_USERNAME \
   --env KAGGLE_KEY=YOUR_KEY \
-  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/download_data.sh; python /spell/models/model_5.py"
+  "chmod +x /spell/scripts/download_data.sh; /spell/scripts/upgrade_env.sh; python /spell/models/model_5.py"
 ```
